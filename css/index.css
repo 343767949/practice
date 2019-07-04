@@ -1,0 +1,397 @@
+/*版心*/
+.w{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+body{
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+/*设置图案文字*/
+/*字体图标*/
+@font-face {
+    font-family: "bj";
+    src:url('../fonts/MiFie-Web-Font.eot') format("embedded-opentype"),
+    url("../fonts/MiFie-Web-Font.svg") format('svg'),
+    url("../fonts/MiFie-Web-Font.ttf") format("truetype"),
+    url("../fonts/MiFie-Web-Font.woff") format("woff");
+}
+.bj-font{
+	font-family:"bj" ;
+	}
+/*.bj-font-bar::before{
+        content: "\f039";
+}	*/
+
+@media screen and (max-width:768px ) {
+			.carousel-time {
+			border:none !important;
+			}
+			.introduce-pic-left img,
+			.introduce-pic-right img{
+				float: none !important;
+				margin: 20px auto;
+			}
+}
+@media screen and (min-width:768px ) {
+			.introduce-pic-left img,
+			.introduce-pic-right img{
+				float: none !important;
+				margin: 30px auto;
+			}
+			.introduce-name{
+				width: 100% !important;
+			}
+}
+@media screen and (min-width:992px ) {
+			.introduce-pic-left img,
+			.introduce-pic-right img{
+				margin: 0 !important;
+				float: left !important; 
+			}
+}
+@media screen and (min-width:1200px ) {
+
+}
+/*回到顶部按钮*/
+.BacktoTop{
+	position: fixed;
+	right: 20px;
+	bottom:30px ;
+}
+.BacktoTop a{
+	display: block;
+	width: 34px;
+	height: 34px;
+	border-radius: 17px;
+	color: #000;
+	font-size: 16px;
+	line-height: 34px;
+	text-align: center;
+}
+.backToTop a:hover,
+.backToTop a:focus{
+	text-decoration: none;
+}
+.backToTop span{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+/*顶部导航*/
+.header{
+	height: 149px;
+	width: 100%;
+	background-color: #fff;
+}
+.header-top{
+	width: 100%;
+	text-align: center;
+}
+.header-pic{
+	width: 289px;
+	height: 79px;
+	margin: 10px auto;
+	cursor:pointer;
+}
+.header-nav ul{
+	text-align: center;
+}
+.header-nav ul li{
+	display: inline-block;	
+	font: 400 16px "微软雅黑";
+	margin:0 12.5px;
+	color:rgb(75,74,74);
+	cursor:pointer;
+}	
+.header-toggle{
+	width: 80px;	
+	height: 47px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	background-color: #e85b37;
+	font: 400 16px/47px "微软雅黑";
+	cursor: pointer;
+}
+.header-toggle::before{
+	content: "";
+	display: inline-block;
+	width: 19px;
+	height: 16px;
+	background: url("../images/header-bar.png") no-repeat;
+	vertical-align: middle;
+	margin:-2px 2px 0 0;
+}
+.header-nav-fixed{
+	height: 58px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(255,255,255,.7);
+	display: none;
+	box-shadow:1px 1px 2px  #ccc ;
+}
+.header-nav-fixed ul li{
+	list-style: none;
+	float: right;
+	color:rgb(75,74,74);
+	font: 400 16px/58px "微软雅黑";
+	margin: 0 20px;
+}
+.header-nav-fixed ul li:first-child{
+	margin-right: 60px;
+}
+/*轮播图*/
+.slider-box{
+	position: relative;
+}
+.item:nth-child(3){
+	width: 100%;
+	height: auto;
+}
+.carousel-time{
+	position: absolute;
+	width: 475px;
+	height: 6.7%;
+	border:1px solid #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font:300 15px"微软雅黑" ;
+	color: #fff;
+	text-align: center;
+	z-index: 2;
+	overflow: hidden;
+}
+.carousel-time p{
+	display: block;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*新人简介*/
+.introduce{
+	padding: 70px 0 100px;
+	text-align: center;
+	background-color: #fff;
+}
+.introduce-line{
+	display:inline-block;
+}
+.introduce h2{
+	color:rgb(51, 51, 51);
+	font: 700 28px "微软雅黑";
+	letter-spacing:15px;
+	margin-bottom: 20px;
+}
+.introduce-pic-left img,
+.introduce-pic-right img{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	float: left;
+}
+.introduce-name{
+	/*overflow: hidden;*/
+}
+.introduce-name h5{
+	color: #000;
+	font: 700 16px/24px "微软雅黑";
+	text-align: left;
+	margin-bottom:30px ;
+}
+.introduce-name span{
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all !important;
+    overflow-wrap: normal !important;
+}
+
+/*大婚纱照*/
+.transparency-pic{
+	/*width: 100%;
+	height: 100%;*/
+	position: fixed;
+	top: 10px;
+	z-index: -10;
+}
+.transparency-pic img{
+	width: 100%;
+	height: 100%;
+}
+.transparency-box{
+	width: 100%;
+	height: 415px;
+	position: relative;
+}
+.transparency-time{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 597px;
+	height: 195px;
+}
+
+/*6张小照片*/
+.sm-pic{
+	text-align: center;
+	background-color: #fff;
+	padding-top: 80px;
+}
+.sm-pic-line{
+	display:inline-block;
+}
+.sm-pic h2{
+	color: rgb(51, 51, 51);
+	font: 700 28px "微软雅黑";
+	letter-spacing: 25px;
+	margin-top: 10px;
+}
+.sm-pic-top img{
+	width: 100%;
+}
+.sm-pic-bottom{
+	margin-top: 20px;
+}
+.sm-pic-bottom img{
+	width: 100%;
+}
+
+/*婚宴地址*/
+.address{
+	width: 100%;	
+	/*height: 470px;*/
+	background-color: #fff;
+	padding-top: 50px;
+	text-align: center;
+}
+.adress-pic-line{
+	display: inline-block;
+}
+.address h2{
+	color:rgb(51, 51, 51);
+	font: 700 28px "微软雅黑";
+	letter-spacing:15px;
+}
+.adress-map{
+	margin-top: 80px;
+	width: 100%;	
+	height: 470px;	
+}
+
+/*婚礼流程*/
+.process{
+	padding: 70px 0 30px 0;
+	text-align: center;
+	background-color: #fff;
+}
+.process-line{
+	display:inline-block;
+}
+.process h2{
+	color:rgb(51, 51, 51);
+	font: 700 28px "微软雅黑";
+	letter-spacing:15px;
+	margin-bottom: 20px;
+}
+/*.process-big-round{
+	width: 208px;
+	height: 208px;
+	border: none;
+	border-radius:50% ;
+	background-color: #ccc;
+	margin:35px auto;
+}*/
+.process-small-round{
+	display: inline-block;
+	width: 208px;
+	height: 208px;
+	text-align: center;
+	border: 7px solid #ccc;
+	border-right:7px solid rgb(232,91,55);
+	border-top:7px solid rgb(232,91,55);
+	border-radius:50% ;
+	background-color: #fff;
+	margin-top: 35px;
+}
+#process-small-round2{
+	border-right:7px solid rgb(232,91,55);
+	border-bottom:7px solid rgb(232,91,55);
+	border-top:7px solid rgb(232,91,55);
+}
+#process-small-round3{
+	border: 7px solid rgb(232,91,55);
+}
+.process-small-round P{
+	margin-top: 70px;
+	font: 500 30px "微软雅黑";
+	color:rgb(51, 51, 51) ;
+}
+.process-small-round span{
+	font-size: 16px;
+}
+/*请帖回复*/
+.response{
+	width: 100%;
+	height: auto;
+	padding: 70px 0 100px;
+	text-align: center;
+	background-color: #fff;
+}
+.response .response-line{
+	display:inline-block;
+}
+.response h2{
+	color:rgb(51, 51, 51);
+	font: 700 28px "微软雅黑";
+	letter-spacing:15px;
+	margin-bottom: 20px;
+}
+.response span,.response label{
+	text-align: left;
+	display: block;
+}
+.response input{
+	border:1px solid #ccc;
+	width: 100%;
+	height: 25px;
+	font-size: 14px;
+}
+.response select{
+	width: 100%;
+	height: 25px;
+}
+.response textarea{
+	width: 100%;
+	height: auto;
+	border:1px solid #ccc;
+	height: 63px;
+}
+.response .row>div{
+	margin: 5px 0;
+}
+.response p{
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	background-color:#ed7f63 ;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 10px;
+}
